@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ashish Bhusal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="mystyle.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <a href="#" class="logo">PORT<span>FOLIO</span></a>
+    <div class="nav-links">
+      <a href="#hero" class="nav-links home-link">Home</a>
+      <a href="#works-heading" class="nav-links works-link">Works</a>
+      <a href="#projects" class="nav-links projects-link">Hobbibes & Interests</a>
+      <a href="#about" class="nav-links aboutme-link">About Me </a>
+      <a href="#contact" class="nav-links contact-link">Contact</a>
+    </div>
+
+  </nav>
+
+  <section id="hero">
+    <div class="container">
+      <div class="hero-content">
+
+        <!-- Column 1: Text -->
+        <div class="hero-text">
+          <h1>HELLO, <br> I AM ASHISH BHUSAL</h1>
+          <h2>Frontend Developer</h2>
+          <p>I create immersive digital experiences that blend cutting-edge technology with stunning visuals.
+            My passion is turning complex ideas into intuitive interfaces that captivate users and push
+            boundaries.</p>
+          <div class="btn-group">
+            <a href="resume/履歴書.pdf" class="btn btn-primary" target="_blank">
+              <i class="fas fa-rocket"></i> Resume
+            </a>
+            <a href="#contact" class="btn">
+              <i class="fas fa-paper-plane"></i> Contact Me
+            </a>
+          </div>
+
+
+        </div>
+
+        <!-- Column 2: Profile Picture -->
+        <div class="profile-container">
+          <div class="profile-wrapper">
+            <img src="me/aa.jpg" alt="Profile" class="profile-img">
+            <div class="glow-effect"></div>
+          </div>
+        </div>
+
+      </div> <!-- .hero-content -->
+    </div> <!-- .container -->
+  </section>
+ 
+  <h3 id="works-heading" class="anchor-heading">WORKS</h3>
+
+  
+    
+      <div class="book-gallery">
+        
+        <a href="https://bhusalaashish18-lab.github.io/beautyofnepal/" class="book" target="_blank" rel="noopener">
+          <div class="book-inner">
+            <img src="sample/4.jpg" alt="work 1" class="book-front">
+            <div class="book-back">
+              <p>Beauty Of Nepal</p>
+            </div>
+          </div>
+        </a>
+  
+        <a href="https://yourproject2.com" class="book" target="_blank" rel="noopener">
+          <div class="book-inner">
+            <img src="sample/3.jpg" alt="work 2" class="book-front">
+            <div class="book-back">
+              <p>Empty(work in progress)</p>
+            </div>
+          </div>
+        </a>
+        
+        <a href="https://yourproject2.com" class="book" target="_blank" rel="noopener">
+          <div class="book-inner">
+            <img src="sample/8.jpg" alt="work 3" class="book-front">
+            <div class="book-back">
+              <p>Empty(work in progress)</p>
+            </div>
+          </div>
+        </a>
+  
+    </div>
+  </section>
+  
+
+  
+  <section id="projects">
+    <h3>HOBBIEBES & INTERESTS</h3>
+
+    <div class="gallery-scroll-wrapper">
+      <div class="gallery-scroll">
+        <a href="#img1" class="card"><img src="me/concert.jpg" alt="Project 1"></a>
+        </a>
+        <a href="#img2" class="card"><img src="me/guitar c.jpg" alt="Project 2"></a>
+        <a href="#img3" class="card featured"><img src="me/guitar p.jpg" alt="Project 3"></a>
+        <a href="#img4" class="card"><img src="me/guitar r.jpg" alt="Project 4"></a>
+        <a href="#img5" class="card"><img src="me/2015-10-29-10-24-25-510.jpg" alt="Project 5"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox containers for full images -->
+  <div id="img1" class="lightbox">
+    <a href="#projects" class="close">×</a>
+    <img src="me/concert.jpg" alt="Project 1 Full Image">
+
+  </div>
+  <div id="img2" class="lightbox">
+    <a href="#projects" class="close">×</a>
+    <img src="me/guitar c.jpg" alt="Project 2 Full Image">
+  </div>
+  <div id="img3" class="lightbox">
+    <a href="#projects" class="close">×</a>
+    <img src="me/guitar p.jpg" alt="Project 3 Full Image">
+  </div>
+  <div id="img4" class="lightbox">
+    <a href="#projects" class="close">×</a>
+    <img src="me/guitar r.jpg" alt="Project 4 Full Image">
+  </div>
+  <div id="img5" class="lightbox">
+    <a href="#projects" class="close">×</a>
+    <img src="me/2015-10-29-10-24-25-510.jpg" alt="Project 5 Full Image">
+  </div>
+
+  </section>
+
+  <script>
+    const userLang = navigator.language || navigator.userLanguage;
+    const isJapanese = userLang.startsWith("ja");
+
+    document.querySelector(".en").style.display = isJapanese ? "none" : "block";
+    document.querySelector(".jp").style.display = isJapanese ? "block" : "none";
+  </script>
+</body>
+<section id="about" class="about-section">
+  <div class="container">
+    <div class="about-content">
+      <div class="text">
+        <h2>About Me</h2>
+        <p>
+          My journey into technology began in high school, where I completed foundational computer <br> science courses at
+          Saraswati Higher Secondary School. I'm currently in my second year at the <br> Japan International Institute of
+          Cybernetics (日本国際工科専門学校), specializing in IT Management, <br> and I'm expected to graduate in March 2026.
+        </p>
+        </p>In 2018, I started working as a sales representative, where I developed strong communication <br> and
+        problem-solving skills. During that time, I became increasingly interested in design and <br> development, which
+        sparked a deeper interest in building websites and digital experiences. <br> I started taking on small freelance
+        projects to practice and improve my skills.</p>
+        <p>
+          I'm actively expanding my skills as a developer. I'm currently focused on HTML, CSS, and <br> Java, while also
+          learning JavaScript and Python.
+        </p>
+        <p>
+          I genuinely enjoy learning and love building clean, high-performance web experiences. <br> I'm passionate about
+          continuous growth and excited about where this journey in tech will <br> lead me.
+        </p>
+        <a href="https://www.linkedin.com" class="linkedin-btn" target="_blank">Open LinkedIn</a>
+      </div>
+      <!-- <div class="photo">
+        <img src="me/whoopee2.jpg" alt="Your Name" />
+      </div> -->
+    </div>
+  </div>
+</section>
+<section id="contact">
+  <h3>CONTACT ME</h3>
+  <div class="contact-container">
+    <!-- Column 1: Social Links -->
+    <div class="social-column">
+      <h4>Follow Me</h4>
+      <div class="links-section">
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="social-link">
+          <img src="https://img.icons8.com/3d-plastilina/138/instagram-new--v2.png" alt="Instagram" />
+          <div>INSTAGRAM</div>
+        </a>
+
+        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="social-link">
+          <img src="https://img.icons8.com/3d-plastilina/69/facebook-new.png" alt="Facebook" />
+          <div>FACEBOOK</div>
+        </a>
+
+        <a href="https://mail.google.com/" target="_blank" rel="noopener noreferrer" class="social-link">
+          <img src="https://img.icons8.com/arcade/64/gmail.png" alt="Gmail"/>
+          <div>GMAIL</div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Column 2: Contact Form -->
+    <form id="contact-form"
+    method="POST"
+    action="https://formspree.io/f/YOUR_FORM_ID"
+    target="_top">
+
+<label for="name">Full Name</label>
+<input type="text"
+       id="name"
+       name="name"
+       placeholder="Your Full Name"
+       required>
+
+<label for="email">Email Address</label>
+<input type="email"
+       id="email"
+       name="email"
+       placeholder="Your Email Address"
+       required>
+
+<label for="message">Message</label>
+<textarea id="message"
+          name="message"
+          rows="6"
+          placeholder="Your Message"
+          required></textarea>
+
+<!-- Optional hidden inputs -->
+<input type="hidden"
+       name="_next"
+       value="https://yourdomain.com/thank-you.html">
+<input type="hidden"
+       name="_subject"
+       value="New message from contact form">
+
+<button type="submit">Send</button>
+</form>
+
+  
+</section>
+
+
+<footer>
+  <p>&copy; 2025 Ashish. All rights reserved.</p>
+</footer>
+
+
+</html>
